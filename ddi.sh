@@ -151,7 +151,7 @@ function install_programs() {
         "screenfetch" "htop" "curl" "tlp" "ufw" "lm-sensors"
         "redshift" "unzip" "arandr" "mlocate" "firefox-esr"
         "keepassxc" "tree" "mpv" "xautolock" "nodejs" "npm"
-        "python3-pip" "libreoffice" "python3-pip"
+        "python3-pip" "libreoffice" "python3-pip" "fuse"
     )
 
     for PROGRAM in "${PROGRAMS[@]}"; do
