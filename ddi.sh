@@ -133,7 +133,7 @@ function add_config_files() {
 function build_suckless_tools() {
     REPO_NAMES=("dwm" "dmenu" "st" "slcok" "dwmblocks")
     for REPO in "${REPO_NAMES[@]}"; do
-        build $REPO_NAMES
+        build $REPO
     done
 }
 
