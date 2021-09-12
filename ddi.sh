@@ -139,9 +139,10 @@ function build_suckless_tools() {
 
 function build() {
     cd /home/$USERNAME/Projects;
-    git clone https://github.com/haralambov/{$1}.git;
+    git clone https://github.com/haralambov/"$1".git;
     cd $1;
     make clean install;
+    sleep 10;
 }
 
 function install_programs() {
