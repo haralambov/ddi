@@ -153,7 +153,7 @@ function install_programs() {
         "redshift" "unzip" "arandr" "mlocate" "firefox-esr"
         "keepassxc" "tree" "mpv" "xautolock" "nodejs" "npm"
         "python3-pip" "libreoffice" "python3-pip" "fuse"
-        "psmisc"
+        "psmisc" "compton"
     )
 
     for PROGRAM in "${PROGRAMS[@]}"; do
