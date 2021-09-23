@@ -148,7 +148,7 @@ function build() {
 function install_programs() {
     PROGRAMS=(
         "sudo" "xorg" "gcc" "make" "libx11-dev" "libxinerama-dev" 
-        "libxft-dev" "libxrandr-dev" "git" "feh" "ripgrep"
+        "libxft-dev" "libxrandr-dev" "libimlib2-dev" "git" "feh" "ripgrep"
         "screenfetch" "htop" "curl" "tlp" "ufw" "lm-sensors"
         "redshift" "unzip" "arandr" "mlocate" "firefox-esr"
         "keepassxc" "tree" "mpv" "xautolock" "nodejs" "npm"
