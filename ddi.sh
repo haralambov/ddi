@@ -102,6 +102,20 @@ function install_neovim() {
     fi
 }
 
+function install_nerd_fonts() {
+    FONTS_DIR="/home/$USERNAME/.local/share/fonts"
+    if [ ! -d $FONTS_DIR ]; then
+        mkdir $FONTS_DIR
+    fi
+    cd /home/$USERNAME/Downloads;
+    wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/UbuntuMono.zip;
+    unzip UbuntuMono.zip;
+    mv *.ttf $FONTS_DIR
+    rm UbuntuMono.zip
+    chown -R $USERNAME:$USERNAME $FONTS_DIR
+    su - $USERNAME -c "fc-cache -f -v"
+}
+
 function detect_sensors() {
     yes "" | sensors-detect
 }
@@ -179,6 +193,7 @@ install_neovim
 
 add_xinitrc
 add_user_dirs
+install_nerd_fonts
 
 add_config_files
 
