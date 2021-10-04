@@ -165,7 +165,7 @@ function install_programs() {
         "sudo" "xorg" "gcc" "make" "libx11-dev" "libxinerama-dev" 
         "libxft-dev" "libxrandr-dev" "libimlib2-dev" "git" "feh" "ripgrep"
         "screenfetch" "htop" "curl" "tlp" "ufw" "lm-sensors"
-        "redshift" "unzip" "arandr" "mlocate" "firefox-esr"
+        "redshift" "unzip" "unrar" "arandr" "mlocate" "firefox-esr"
         "keepassxc" "tree" "mpv" "xautolock" "nodejs" "npm"
         "python3-pip" "libreoffice" "python3-pip" "fuse"
         "psmisc" "compton" "network-manager-gnome"
