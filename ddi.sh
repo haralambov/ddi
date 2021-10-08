@@ -187,6 +187,7 @@ install_microcode
 install_program firmware-iwlwifi
 
 install_docker
+install_program docker-compose
 install_program qbittorrent
 
 install_spotify
