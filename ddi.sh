@@ -177,11 +177,10 @@ function install_programs() {
     done
 }
 
-install_programs
-
 add_user_to_sudoers
 detect_sensors
 add_contrib_and_non_free
+install_programs
 enable_firewall
 
 install_microcode
