@@ -105,7 +105,7 @@ function install_neovim() {
 function install_nerd_fonts() {
     FONTS_DIR="/home/$USERNAME/.local/share/fonts"
     if [ ! -d $FONTS_DIR ]; then
-        mkdir $FONTS_DIR
+        mkdir -p $FONTS_DIR
     fi
     cd /home/$USERNAME/Downloads;
     wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/UbuntuMono.zip;
