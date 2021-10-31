@@ -169,7 +169,7 @@ function install_programs() {
         "redshift" "unzip" "unrar" "arandr" "mlocate" "firefox-esr"
         "keepassxc" "tree" "mpv" "xautolock" "nodejs" "npm"
         "python3-pip" "libreoffice" "python3-pip" "fuse"
-        "psmisc" "compton" "network-manager-gnome"
+        "psmisc" "compton" "network-manager-gnome" "pavucontrol"
     )
 
     for PROGRAM in "${PROGRAMS[@]}"; do
