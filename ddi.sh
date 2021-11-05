@@ -92,7 +92,7 @@ function install_spotify() {
 function install_neovim() {
     NVIM_PATH=$(which nvim)
     if [[ -z "$NVIM_PATH" ]]; then
-        wget https://github.com/neovim/neovim/releases/download/v0.5.0/nvim.appimage;
+        wget https://github.com/neovim/neovim/releases/download/v0.5.1/nvim.appimage;
         mv nvim.appimage nvim;
         chmod +x nvim;
         mkdir -p /home/$USERNAME/.local/bin;
