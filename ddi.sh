@@ -75,7 +75,7 @@ function install_docker() {
 
 function cleanup() {
     echo "Cleanup..."
-    apt purge -y bluetooth bluez vim-tiny vim-common;
+    apt purge -y bluetooth bluez vim-tiny vim-common notification-daemon;
     apt clean && apt autoclean && apt autoremove
 }
 
