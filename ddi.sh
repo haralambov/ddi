@@ -170,7 +170,7 @@ function install_programs() {
         "keepassxc" "tree" "mpv" "xautolock" "nodejs" "npm"
         "python3-pip" "libreoffice" "python3-pip" "fuse"
         "psmisc" "compton" "network-manager-gnome" "pavucontrol"
-        "libnotify-bin" "dunst"
+        "libnotify-bin" "dunst" "brightnessctl"
     )
 
     for PROGRAM in "${PROGRAMS[@]}"; do
