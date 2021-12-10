@@ -171,11 +171,24 @@ function install_programs() {
         "python3-pip" "libreoffice" "python3-pip" "fuse"
         "psmisc" "compton" "network-manager-gnome" "pavucontrol"
         "libnotify-bin" "dunst" "brightnessctl" "xclip" "zathura"
+        "xsel" "libxfixes-dev"
     )
 
     for PROGRAM in "${PROGRAMS[@]}"; do
         install_program $PROGRAM
     done
+}
+
+function install_clipboard_manager() {
+    cd /home/$USERNAME/Projects;
+    git clone https://github.com/cdown/clipnotify.git;
+    cd clipnotify;
+    make clean install;
+    cd ..;
+    git clone https://github.com/cdown/clipmenu.git;
+    cd clipmenu;
+    make install;
+    cd ..;
 }
 
 add_user_to_sudoers
@@ -201,5 +214,6 @@ install_nerd_fonts
 add_config_files
 
 build_suckless_tools
+install_clipboard_manager
 
 cleanup
