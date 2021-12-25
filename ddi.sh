@@ -129,7 +129,7 @@ function add_xinitrc() {
 }
 
 function add_user_dirs() {
-    USER_DIRS=('Documents/notes' 'Downloads' 'Projects' 'Pictures' '.config')
+    USER_DIRS=('Documents/notes' 'Downloads' 'Projects' 'Pictures/Screenshots' '.config' '.cache/clipmenu')
     for i in "${USER_DIRS[@]}"; do
         if [ ! -d "/home/$USERNAME/$i" ]; then
             mkdir -p "/home/$USERNAME/$i";
