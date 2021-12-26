@@ -167,7 +167,7 @@ function install_programs() {
         "libxft-dev" "libxrandr-dev" "libimlib2-dev" "git" "feh" "ripgrep"
         "screenfetch" "htop" "curl" "tlp" "ufw" "lm-sensors"
         "redshift" "unzip" "unrar" "arandr" "mlocate" "firefox-esr"
-        "keepassxc" "tree" "mpv" "xautolock" "nodejs" "npm"
+        "tree" "mpv" "xautolock" "nodejs" "npm"
         "python3-pip" "libreoffice" "python3-pip" "fuse"
         "psmisc" "compton" "network-manager-gnome" "pavucontrol"
         "libnotify-bin" "dunst" "brightnessctl" "xclip" "zathura"
