@@ -138,7 +138,7 @@ function add_user_files() {
 }
 
 function add_user_dirs() {
-    USER_DIRS=('Documents/notes' 'Downloads' 'Projects' 'Pictures/Screenshots' '.config' '.cache/clipmenu')
+    USER_DIRS=('Documents/notes' 'Downloads' 'Projects' 'Pictures/Screenshots' '.config' '.cache/clipmenu' 'intelephense')
     for i in "${USER_DIRS[@]}"; do
         if [ ! -d "/home/$USERNAME/$i" ]; then
             mkdir -p "/home/$USERNAME/$i";
