@@ -181,7 +181,7 @@ function install_programs() {
         "python3-pip" "libreoffice" "python3-pip" "fuse"
         "psmisc" "compton" "network-manager-gnome" "pavucontrol"
         "libnotify-bin" "dunst" "brightnessctl" "xclip" "zathura"
-        "xsel" "libxfixes-dev" "pass" "pass-extension-otp"
+        "xsel" "libxfixes-dev" "pass" "pass-extension-otp" "nnn"
     )
 
     for PROGRAM in "${PROGRAMS[@]}"; do
