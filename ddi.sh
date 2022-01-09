@@ -124,6 +124,7 @@ function add_xinitrc() {
     echo "Adding .xinitrc";
     echo "setxkbmap -option;setxkbmap -option \"altwin:swap_alt_win,caps:swapescape\"" >> /home/$USERNAME/.xinitrc
     echo "feh --bg-scale /home/$USERNAME/Projects/dotfiles/debian_wallpaper.png" >> /home/$USERNAME/.xinitrc;
+    echo "redshift -P -O 3500" >> /home/$USERNAME/.xinitrc;
     echo "exec dwm" >> /home/$USERNAME/.xinitrc;
     chown -R $USERNAME:$USERNAME /home/$USERNAME/.xinitrc;
 }
