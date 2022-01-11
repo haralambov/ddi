@@ -183,6 +183,7 @@ function install_programs() {
         "psmisc" "compton" "network-manager-gnome" "pavucontrol"
         "libnotify-bin" "dunst" "brightnessctl" "xclip" "zathura"
         "xsel" "libxfixes-dev" "pass" "pass-extension-otp" "nnn"
+        "solaar"
     )
 
     for PROGRAM in "${PROGRAMS[@]}"; do
