@@ -179,7 +179,7 @@ function install_programs() {
         "screenfetch" "htop" "curl" "tlp" "ufw" "lm-sensors"
         "redshift" "unzip" "unrar" "arandr" "mlocate" "firefox-esr"
         "tree" "mpv" "xautolock" "nodejs" "npm"
-        "python3-pip" "libreoffice" "python3-pip" "fuse"
+        "libreoffice" "python3-pip" "fuse"
         "psmisc" "compton" "network-manager-gnome" "pavucontrol"
         "libnotify-bin" "dunst" "brightnessctl" "xclip" "zathura"
         "xsel" "libxfixes-dev" "pass" "pass-extension-otp" "nnn"
