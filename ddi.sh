@@ -14,6 +14,8 @@ if [ -z $USER_EXISTS ]; then
     exit;
 fi
 
+export PATH="$PATH:/usr/sbin"
+
 function install_program() {
     echo -ne "Installing '$1'"
     OUTPUT=`apt install -y $1 2>&1`
