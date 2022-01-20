@@ -100,7 +100,9 @@ function install_neovim() {
         mkdir -p /home/$USERNAME/.local/bin;
         mv nvim /home/$USERNAME/.local/bin/;
         chown -R $USERNAME:$USERNAME /home/$USERNAME/.local;
-        python3 -m pip install --user --upgrade pynvim;
+        su - $USERNAME -c "pip3 install pynvim neovim";
+        su - $USERNAME -c "sh -c 'curl -fLo \"${XDG_DATA_HOME:-/home/$USERNAME/.local/share}\"/nvim/site/autoload/plug.vim --create-dirs \
+           https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'";
     fi
 }
 
