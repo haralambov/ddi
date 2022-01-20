@@ -153,6 +153,10 @@ function add_user_dirs() {
     add_user_files
 }
 
+function change_folder_permissions() {
+    chown -R $USERNAME:$USERNAME /home/$USERNAME
+}
+
 function add_config_files() {
     cd /home/$USERNAME/Projects;
     git clone https://github.com/haralambov/dotfiles.git;
@@ -228,6 +232,7 @@ add_user_dirs
 install_nerd_fonts
 
 add_config_files
+change_folder_permissions
 
 build_suckless_tools
 install_clipboard_manager
