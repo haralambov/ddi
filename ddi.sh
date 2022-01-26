@@ -85,7 +85,7 @@ function install_spotify() {
     SPOTIFY_PATH=$(which spotify)
     if [[ -z "$SPOTIFY_PATH" ]]; then
         echo "Installing spotify"
-        curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | apt-key add - ;
+        curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add -;
         echo "deb http://repository.spotify.com stable non-free" | tee /etc/apt/sources.list.d/spotify.list;
         apt-get update && apt-get install -y spotify-client
     fi
