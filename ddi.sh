@@ -188,7 +188,7 @@ function install_programs() {
         "redshift" "unzip" "unrar" "arandr" "mlocate" "firefox-esr"
         "tree" "mpv" "xautolock" "nodejs" "npm"
         "python3-pip" "fuse" "pulsemixer"
-        "psmisc" "compton" "network-manager-gnome" "pavucontrol"
+        "psmisc" "compton" "pavucontrol"
         "libnotify-bin" "dunst" "brightnessctl" "xclip" "zathura"
         "xsel" "libxfixes-dev" "pass" "pass-extension-otp" "nnn"
         "libx11-xcb-dev" "libxcb-res0-dev" "ncal"
