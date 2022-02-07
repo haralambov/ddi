@@ -75,6 +75,15 @@ function install_docker() {
     fi
 }
 
+function install_bluetooth() {
+    echo "Installing bluetooth"
+    install_program bluetooth
+    install_program blueman-applet
+    install_program pulseaudio-utils
+    install_program pulseaudio-module-bluetooth
+    su - $USERNAME -c "sudo systemctl enable bluetooth"
+}
+
 function cleanup() {
     echo "Cleanup..."
     apt purge -y bluetooth bluez vim-tiny vim-common notification-daemon;
@@ -226,6 +235,7 @@ install_microcode
 install_program firmware-iwlwifi
 
 install_docker
+install_bluetooth
 install_program docker-compose
 install_program qbittorrent
 
