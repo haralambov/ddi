@@ -81,6 +81,9 @@ function install_bluetooth() {
     install_program blueman-applet
     install_program pulseaudio-utils
     install_program pulseaudio-module-bluetooth
+    # enables the switch on connect module,
+    # which automatically changes the default output device
+    echo "load-module module-switch-on-connect" >> /etc/pulse/default.pa
     su - $USERNAME -c "sudo systemctl enable bluetooth"
 }
 
