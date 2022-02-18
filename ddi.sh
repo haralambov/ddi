@@ -145,24 +145,14 @@ function add_xinitrc() {
     chown -R $USERNAME:$USERNAME /home/$USERNAME/.xinitrc;
 }
 
-function add_user_files() {
-    USER_FILES=('intelephense/licence.txt')
-    for i in "${USER_FILES[@]}"; do
-        if [ ! -f "$i" ]; then
-            su - $USERNAME -c "touch /home/$USERNAME/$i"
-        fi
-    done
-}
-
 function add_user_dirs() {
-    USER_DIRS=('Documents/notes' 'Downloads' 'Projects' 'Pictures/Screenshots' '.config' '.cache/clipmenu' 'intelephense')
+    USER_DIRS=('Documents/notes' 'Downloads' 'Projects' 'Pictures/Screenshots' '.config' '.cache/clipmenu')
     for i in "${USER_DIRS[@]}"; do
         if [ ! -d "/home/$USERNAME/$i" ]; then
             mkdir -p "/home/$USERNAME/$i";
             chown -R $USERNAME:$USERNAME /home/$USERNAME/$i;
         fi
     done
-    add_user_files
 }
 
 function change_folder_permissions() {
