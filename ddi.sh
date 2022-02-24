@@ -194,6 +194,7 @@ function install_programs() {
         "libnotify-bin" "dunst" "brightnessctl" "xclip" "zathura"
         "xsel" "libxfixes-dev" "pass" "pass-extension-otp" "nnn"
         "libx11-xcb-dev" "libxcb-res0-dev" "ncal"
+        "newsboat"
     )
 
     for PROGRAM in "${PROGRAMS[@]}"; do
