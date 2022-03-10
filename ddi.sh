@@ -187,7 +187,7 @@ function install_programs() {
         "sudo" "xorg" "gcc" "make" "libx11-dev" "libxinerama-dev" 
         "libxft-dev" "libxrandr-dev" "libimlib2-dev" "git" "feh" "ripgrep"
         "screenfetch" "htop" "curl" "tlp" "ufw" "lm-sensors"
-        "redshift" "unzip" "unrar" "arandr" "mlocate" "firefox-esr"
+        "redshift" "unzip" "zip" "unrar" "arandr" "mlocate" "firefox-esr"
         "tree" "mpv" "xautolock" "nodejs" "npm"
         "python3-pip" "fuse" "pulsemixer" "fonts-font-awesome"
         "psmisc" "compton" "pavucontrol" "cmus"
