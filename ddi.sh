@@ -75,6 +75,25 @@ function install_docker() {
     fi
 }
 
+function install_nodejs() {
+    mkdir -p /home/$USERNAME/node
+    cd /home/$USERNAME/node
+
+    wget https://nodejs.org/dist/v16.14.0/node-v16.14.0-linux-x64.tar.xz
+
+    tar -xf node-v16.14.0-linux-x64.tar.xz
+    cd node-v16.14.0-linux-x64
+    mkdir /usr/local/bin/nodejs
+    mv lib/ share/ include/ bin/ /usr/local/bin/nodejs
+
+    ln -s /usr/local/bin/nodejs/bin/node /usr/local/bin/node
+    ln -s /usr/local/bin/nodejs/bin/npm /usr/local/bin/npm
+    ln -s /usr/local/bin/nodejs/bin/npx /usr/local/bin/npx
+    ln -s /usr/local/bin/nodejs/bin/corepack /usr/local/bin/corepack
+
+    rm -rf /home/$USERNAME/node
+}
+
 function install_bluetooth() {
     echo "Installing bluetooth"
     install_program bluetooth
@@ -188,7 +207,7 @@ function install_programs() {
         "libxft-dev" "libxrandr-dev" "libimlib2-dev" "git" "feh" "ripgrep"
         "screenfetch" "htop" "curl" "tlp" "ufw" "lm-sensors"
         "redshift" "unzip" "zip" "unrar" "arandr" "mlocate" "firefox-esr"
-        "tree" "mpv" "xautolock" "nodejs" "npm"
+        "tree" "mpv" "xautolock"
         "python3-pip" "fuse" "pulsemixer" "fonts-font-awesome"
         "psmisc" "compton" "pavucontrol" "cmus"
         "libnotify-bin" "dunst" "brightnessctl" "xclip" "zathura"
@@ -229,6 +248,7 @@ install_microcode
 install_program firmware-iwlwifi
 
 install_docker
+install_nodejs
 install_bluetooth
 install_program docker-compose
 install_program qbittorrent
