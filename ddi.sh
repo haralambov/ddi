@@ -238,6 +238,10 @@ function install_solaar() {
     apt install solaar;
 }
 
+function install_rust() {
+    su - $USERNAME -c "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh"
+}
+
 add_user_to_sudoers
 detect_sensors
 add_contrib_and_non_free
@@ -267,5 +271,6 @@ build_suckless_tools
 install_clipboard_manager
 
 install_solaar
+install_rust
 
 cleanup
